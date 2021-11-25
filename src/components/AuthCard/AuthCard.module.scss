@@ -1,0 +1,38 @@
+.cardOrientation{
+    display: flex;
+    flex-direction: row;
+    padding: 32px;
+    .imageBox{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        border-right: 1px solid #a6bbdb;
+        padding-right: 32px;
+    }
+    .formBox{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        padding: 32px;
+    }
+}
+
+@media (max-width: 600px) {
+    .cardOrientation{
+        flex-direction: column;
+        padding: 8px;
+        .imageBox{
+            width: 100%;
+            border: none;
+            padding: 0;
+        }
+        .formBox{
+            width: 100%;
+            padding: 0;
+            margin-top: 1em;
+        }
+    }
+}

@@ -1,0 +1,14 @@
+.App {
+  background-color: #a4bbdd;
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  align-items: center;
+  transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+@media (max-width: 600px) {
+  .App{
+    background-color: #ffffff;
+  }
+}

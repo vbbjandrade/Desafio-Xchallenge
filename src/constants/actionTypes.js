@@ -1,0 +1,4 @@
+export const Types = {
+    LOGIN_ACTION: 'LOGIN_ACTION',
+    REGISTER_ACTION: 'REGISTER_ACTION'
+}
