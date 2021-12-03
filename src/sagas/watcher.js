@@ -1,5 +1,5 @@
 import { takeLatest } from 'redux-saga/effects';
-import { loginSaga } from './authSaga.js';
+import { loginSaga, registerSaga } from './authSaga.js';
 import { Types } from '../constants/actionTypes.js';
 
 export function* watchLogin() {
@@ -7,5 +7,5 @@ export function* watchLogin() {
 }
 
 export function* watchRegister() {
-  yield takeLatest(Types.LOGIN_ACTION, loginSaga);
+  yield takeLatest(Types.REGISTER_ACTION, registerSaga);
 }
